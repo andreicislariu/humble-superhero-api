@@ -17,7 +17,7 @@ export class SuperheroService {
       (a, b) => b.humilityScore - a.humilityScore
     );
   }
-  getSuperheroesByid(id: string): Superhero | undefined {
+  getSuperheroesById(id: string): Superhero | undefined {
     return this.superheroes.find((hero) => hero.id === id);
   }
 }
