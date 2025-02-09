@@ -5,19 +5,19 @@ export const validateSuperhero = (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
+): void => {
   const { name, superpower, humilityScore } = req.body as CreateSuperheroDto;
 
   if (!name || typeof name !== "string") {
-    return res
-      .status(400)
-      .json({ error: "Name is required and must be a string" });
+    res.status(400).json({ error: "Name is required and must be a string" });
+    return;
   }
 
   if (!superpower || typeof superpower !== "string") {
-    return res
+    res
       .status(400)
       .json({ error: "Superpower is required and must be a string" });
+    return;
   }
 
   if (
@@ -26,9 +26,11 @@ export const validateSuperhero = (
     humilityScore < 1 ||
     humilityScore > 10
   ) {
-    return res.status(400).json({
+    res.status(400).json({
       error: "Humility score is required and must be a number between 1 and 10",
     });
+    return;
   }
+
   next();
 };
