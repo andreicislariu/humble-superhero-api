@@ -2,7 +2,7 @@
 
 **1. Clone the repository:**
 
-git clone [https://github.com/your-username/humble-superhero-api.git](https://github.com/andreicislariu/humble-superhero-api.git)
+git clone [https://github.com/andreicislariu/humble-superhero-api.git](https://github.com/andreicislariu/humble-superhero-api.git)
 cd humble-superhero-api
 
 **2. Install dependencies:**
@@ -31,6 +31,10 @@ Add a new superhero.
   "superpower": "Kindness2",
   "humilityScore": 4
 }
+
+**Testing with the frontend:**
+git clone https://github.com/andreicislariu/superhero-frontend.git
+
 
 
 To improve or expand this task, I would:
