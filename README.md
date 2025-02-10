@@ -3,6 +3,7 @@
 **1. Clone the repository:**
 
 git clone [https://github.com/andreicislariu/humble-superhero-api.git](https://github.com/andreicislariu/humble-superhero-api.git)
+
 cd humble-superhero-api
 
 **2. Install dependencies:**
@@ -12,6 +13,7 @@ npm install
 **3. Run the server:**
 
 npm run dev
+
 By default, the server will run on http://localhost:3000.
 
 **API Endpoints**
